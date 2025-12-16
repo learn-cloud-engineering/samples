@@ -64,8 +64,16 @@ terraform validate
 
 ### Run the plan
 
+Run a dry-run of the plan.
+
 ```sh
 terraform plan
+```
+
+You can also create a `tfplan` file.
+
+```sh
+terraform plan -out tfplan
 ```
 
 ### Apply the plan
@@ -74,11 +82,19 @@ terraform plan
 terraform apply
 ```
 
+If you have a `tfplan` file, you can `apply` it.
+
+```sh
+terraform apply "tfplan"
+```
+
 Alternatively, you can `apply` with `--auto-approve` to skip the confirmation prompt.
 
 ```sh
 terraform apply -auto-approve
 ```
+
+### Show the current state
 
 See what is currently being deployed (state file).
 
@@ -92,7 +108,7 @@ It can also show you the `tfplan` file.
 terraform show "tfplan"
 ```
 
-### Display values of the outputs
+### Display outputs
 
 ```sh
 terraform output
