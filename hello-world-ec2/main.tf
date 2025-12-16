@@ -13,6 +13,6 @@ resource "aws_instance" "web_server" {
               EOF
 
   tags = {
-    Name = "HelloWorldWebServer"
+    Name = "hello-world-server"
   }
 }

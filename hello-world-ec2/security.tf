@@ -19,6 +19,6 @@ resource "aws_security_group" "web_server_sg" {
   }
 
   tags = {
-    Name = "hello-world-web-server-sg"
+    Name = "hello-world-server-sg"
   }
 }
