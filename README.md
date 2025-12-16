@@ -4,7 +4,7 @@ Each folder is a self contained project.
 
 ## Sample projects
 
-- [x] `hello-world-ec2` – A simple hello-world web server hosted on EC2.
+- [x] [`hello-world-ec2`](/tree/main/hello-world-ec2) – A simple hello-world web server hosted on EC2.
 - [ ] `hello-world-container-ec2` – A simple hello-world container hosted on EC2.
 - [ ] `hello-world-ecs` – A simple hello-world container hosted on ECS.
 
