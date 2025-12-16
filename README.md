@@ -38,7 +38,9 @@ aws configure
 
 You can use the following commands to get started:
 
-First `cd` into the project directory.
+### Select the project folder
+
+First, `cd` into the project directory.
 
 ```sh
 cd <project-folder>
@@ -46,34 +48,36 @@ cd <project-folder>
 
 IMPORTANT: Check and change the variables in the `variables.tf` file before proceeding.
 
-Initialize Terraform. You may need first to update your `terraform` CLI to the lastest version.
+### Initialize Terraform
+
+You may need first to update your `terraform` CLI to the lastest version.
 
 ```sh
 terraform init
 ```
 
-Validate the configuration.
+### Validate the configuration
 
 ```sh
 terraform validate
 ```
 
-Create a plan file.
+### Run the plan
 
 ```sh
-terraform plan -out "tfplan"
+terraform plan
 ```
 
-Apply the plan.
+### Apply the plan
 
 ```sh
-terraform apply "tfplan"
+terraform apply
 ```
 
 Alternatively, you can `apply` with `--auto-approve` to skip the confirmation prompt.
 
 ```sh
-terraform apply "tfplan" -auto-approve
+terraform apply -auto-approve
 ```
 
 See what is currently being deployed (state file).
@@ -88,13 +92,13 @@ It can also show you the `tfplan` file.
 terraform show "tfplan"
 ```
 
-Display the values of the outputs.
+### Display values of the outputs
 
 ```sh
 terraform output
 ```
 
-Destroy the resources.
+### Destroy the resources
 
 ```sh
 terraform destroy
