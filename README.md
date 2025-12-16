@@ -1,12 +1,12 @@
 # Samples
 
-Each folder is a self contained project.
+Each folder is a self contained project. You may use these sample projects as starter code for your own projects.
 
 ## Sample projects
 
 - [x] [`hello-world-ec2`](/hello-world-ec2) – A simple hello-world web server hosted on EC2.
-- [ ] `hello-world-container-ec2` – A simple hello-world container hosted on EC2.
-- [ ] `hello-world-ecs` – A simple hello-world container hosted on ECS.
+- [ ] [`hello-world-ec2-container`](/hello-world-ec2-container) – A simple hello-world container hosted on EC2.
+- [ ] [`hello-world-ecs`](/hello-world-ecs/) – A simple hello-world container hosted on ECS.
 
 ## Requirements
 
