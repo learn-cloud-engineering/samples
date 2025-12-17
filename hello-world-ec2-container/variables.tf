@@ -1,6 +1,4 @@
-# You can change this to your preferred region
 variable "region" {
-  default     = "us-east-1"
   description = "The AWS region to deploy resources in"
   type        = string
   
@@ -10,7 +8,7 @@ variable "region" {
       "us-east-1",      # North Virginia
       "me-south-1",     # Bahrain
     ], var.region)
-    error_message = "Error: Not a valid region."
+    error_message = "💁 Region must be either ap-southeast-1, me-south-1, or us-east-1."
   }
 }
 
