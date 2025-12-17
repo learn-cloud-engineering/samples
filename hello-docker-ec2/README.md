@@ -1,4 +1,4 @@
-# hello-world-ec2-container
+# hello-docker-ec2
 
 This project sets up an EC2 instance that runs a "Hello World" application inside a Docker container.
 

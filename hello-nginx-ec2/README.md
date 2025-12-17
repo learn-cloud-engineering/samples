@@ -1,4 +1,4 @@
-# hello-world-ec2-container
+# hello-nginx-ec2
 
 This project sets up an EC2 instance that runs a "Hello World" nginx web server inside a Docker container.
 
