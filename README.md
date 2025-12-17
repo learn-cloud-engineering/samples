@@ -9,6 +9,7 @@ Each folder is a self contained project. You may use these sample projects as st
 - [x] [`hello-world-ec2`](/hello-world-ec2) – A simple hello-world web server hosted on EC2.
 - [x] [`hello-nginx-ec2`](/hello-nginx-ec2) – A simple hello-world nginx container hosted on EC2.
 - [x] [`hello-docker-ec2`](/hello-docker-ec2) – A simple hello-world docker container hosted on EC2.
+- [x] [`hello-static-site-s3`](/hello-static-site-s3-) – A simple static site hosted on S3.
 - [ ] [`hello-world-ecs`](/hello-world-ecs/) – A simple hello-world container hosted on ECS.
 
 ## Requirements
