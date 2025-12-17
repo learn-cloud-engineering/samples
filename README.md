@@ -5,6 +5,7 @@ Each folder is a self contained project. You may use these sample projects as st
 ## Sample projects
 
 - [x] [`hello-world-ec2`](/hello-world-ec2) – A simple hello-world web server hosted on EC2.
+- [ ] [`hello-nginx-ec2`](/hello-nginx-ec2) – A simple hello-world nginx container hosted on EC2.
 - [x] [`hello-world-ec2-container`](/hello-world-ec2-container) – A simple hello-world container hosted on EC2.
 - [ ] [`hello-world-ecs`](/hello-world-ecs/) – A simple hello-world container hosted on ECS.
 
