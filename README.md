@@ -1,5 +1,7 @@
 # Samples
 
+Sample cloud infrastructure applications built with Terraform.
+
 Each folder is a self contained project. You may use these sample projects as starter code for your own projects.
 
 ## Sample projects
