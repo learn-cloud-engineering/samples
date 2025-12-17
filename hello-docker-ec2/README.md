@@ -30,4 +30,4 @@ sudo docker run --rm hello-world:linux
 
 You should see the following output.
 
-![screenshot](/assets/hello-world-ec2-container.png)
+![screenshot](/hello-docker-ec2/images/image.png)

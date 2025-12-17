@@ -8,4 +8,4 @@ Run this command to get the public IP address of the instance. You can use `curl
 terraform output
 ```
 
-![screenshot](/assets/hello-world-ec2.png)
+![screenshot](/hello-world-ec2/images/image.png)
