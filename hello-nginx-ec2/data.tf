@@ -12,3 +12,12 @@ data "aws_ami" "amazon_linux" {
     values = ["hvm"]
   }
 }
+
+data "http" "endpoint" {
+  url = "http://${aws_instance.server.public_ip}"
+
+  retry {
+    attempts     = 5
+    min_delay_ms = 5000
+  }
+}
