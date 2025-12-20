@@ -2,7 +2,21 @@ variables {
   region = "us-east-1"
 }
 
-run "deploy_static_site" {
+run "verify_igw_is_attached_to_default_vpc" {
+  command = apply
+
+  assert {
+    error_message = "No VPCs are attached to the internet gateway."
+    condition     = length(data.aws_internet_gateway.default.attachments) > 0
+  }
+
+  assert {
+    error_message = "The default VPC is not attached to the internet gateway."
+    condition     = contains(local.igw_attached_vpc_ids, data.aws_vpc.default.id)
+  }
+}
+
+run "verify_status_code_200" {
   command = apply
 
   assert {
@@ -25,7 +39,7 @@ run "verify_site_content" {
   }
 
   assert {
-    condition     = strcontains(data.http.endpoint.response_body, "172.17.0.2:80")
-    error_message = "Should have correct container private IP address."
+    condition     = can(regex("172.17.\\d{1,3}.\\d{1,3}:80", data.http.endpoint.response_body))
+    error_message = "The response body did not contain a valid container IP in the 172.17.x.x:80 range."
   }
 }

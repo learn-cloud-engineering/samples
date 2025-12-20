@@ -123,3 +123,23 @@ terraform output
 ```sh
 terraform destroy
 ```
+
+### Run the tests
+
+If a project has a `/tests` folder you can run the `test` command.
+
+```sh
+terraform test
+```
+
+Use the `-verbose` flag to see details of the plan or state for each `run` block within a test file.
+
+```sh
+terraform test -verbose
+```
+
+Use the `-filter` flag to run a specific test file.
+
+```sh
+terraform test -filter=testfile
+```

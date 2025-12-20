@@ -13,6 +13,17 @@ data "aws_ami" "amazon_linux" {
   }
 }
 
+data "aws_vpc" "default" {
+  default = true
+}
+
+data "aws_internet_gateway" "default" {
+  filter {
+    name   = "attachment.vpc-id"
+    values = [aws_default_vpc.default.id]
+  }
+}
+
 data "http" "endpoint" {
   url = "http://${aws_instance.server.public_ip}"
 
