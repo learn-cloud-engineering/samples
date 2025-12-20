@@ -19,7 +19,7 @@ variable "instance_type" {
   type        = string
 
   validation {
-    condition = (var.instance_type == "t3.micro")
+    condition     = (var.instance_type == "t3.micro")
     error_message = "value"
   }
 }
