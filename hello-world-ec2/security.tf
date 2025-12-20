@@ -1,6 +1,6 @@
 # Security group to allow HTTP traffic
-resource "aws_security_group" "web_server_sg" {
-  name        = "web-server-sg"
+resource "aws_security_group" "server_sg" {
+  name        = "hello-world-server-sg"
   description = "Allow HTTP inbound traffic"
   vpc_id      = aws_default_vpc.default.id
 
