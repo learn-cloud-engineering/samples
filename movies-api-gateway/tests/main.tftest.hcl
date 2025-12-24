@@ -9,6 +9,10 @@ run "verify_status_code_200" {
     condition     = data.http.endpoint.status_code == 200
     error_message = "Should return status 200, but got ${data.http.endpoint.status_code}."
   } 
+}
+
+run "verify_movie_data_in_response_body" {
+  command = apply
 
   assert {
     condition = strcontains(data.http.endpoint.response_body, "Inception")
