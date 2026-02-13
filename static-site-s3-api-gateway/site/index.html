@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello, S3!</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #333;
+      font-size: 3rem;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    #movies {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, Static Site on S3!</h1>
+  <button id="fetchMovies">Fetch Movies</button>
+  <div id="movies"></div>
+
+  <script type="module" src="config.js"></script>
+  <script type="module" src="movies.js"></script>
+</body>
+</html>
+
