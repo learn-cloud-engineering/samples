@@ -1,0 +1,16 @@
+# This is a sample backend configuration for Terraform using AWS S3 and DynamoDB for state locking.
+# This file is not meant to be used directly. Rename the file as `backend.tf`
+# and modify the values as needed for your environment.
+
+terraform {
+  # IMPORTANT: You cannot use variables within the backend configuration block.
+  backend "s3" {
+    bucket         = "my-terraform-state"
+    key            = "projects/terraform.tfstate"
+    region         = "us-east-1"
+    
+    # Enable state locking
+    dynamodb_table = "terraform-state-lock"
+    encrypt        = true
+  }
+}
